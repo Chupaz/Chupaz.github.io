@@ -5,20 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>基本練習</title>
     <style>
+
         /* CSS */
         body {
             font-family: Arial, sans-serif;
             background-color: #0f750e;
             color: #fc99e5;
-            margin: 50px;
             padding: 50px;
             text-align: center;
         }
-    </style>
 
+       .myButton {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FFFFFF;
+        color: #6f00ff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+        
+        #imgDiv{
+            position: absolute;
+
+            left: 42%;
+            margin-top: 125px;
+            width: 250px;
+            height:350px;
+            background-color: rgb(255, 255, 255);
+        }
+
+    </style>
 </head>
 <body>
-        TEST
+        <BR>
+        元宇宙工作坊-地理系
+        <BR>
+        
+            centerImage
+
+        <div id="imgDiv">
+            <img src="">
+        </div>
+        <button class ="myButton" onclick="alert('按鈕被點擊！')">開啟地圖</button>
+
 
 </body>
 </html>
