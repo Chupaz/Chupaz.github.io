@@ -1,21 +1,30 @@
+body {
+    font-family:"Microsoft YaHei";
+    color: #0a58c6;
+    text-align: center;
+    min-height: 100vh;
+}
+
 #map { 
     height: 300px; 
+    text-align: center;
 }
 
 #info {
     width: 100%;
-    background-color: rgb(0, 130, 58);
+    background-color: rgb(122, 187, 240);
     height: 200px;
+    text-align: center;
 }
 
 #openCameraButton {
     position: absolute;
-    width: 200px;
+    width: 150px;
     left: 50%;
     margin-left: -100px;
-    border-radius: 5px;
-    bottom: 10px;
-    padding: 10px;
+    border-radius: 10px;
+    bottom: 50px;
+    padding: 40px;
     cursor: pointer;
     border: none;
     color: #FFFFFF;

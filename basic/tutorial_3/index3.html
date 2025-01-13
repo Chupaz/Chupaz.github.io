@@ -3,25 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wicked</title>
-        <link rel="stylesheet" href="./CSS/main.css">
-
+        <title>穿梭之門</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./JS3/images3/QR.jpg"></script>
     </head>
     <body>
-        <BR>
-            <H1>WICKED<H1>
+        恭喜您通過前方所有門扉！請掃描下圖開啟最後一道門。
+
         <BR>
         
-            <div id="qrcode"></div>
-
-            <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "h");
-            </script>
+        <div id="qrcode"></div>
+        <div id="imgDiv">
+            <img src="./images3/Con.gif">
+        </div> -->
         
-        <button id="openMapButton" onclick="goPage()">New World</button>
+        <button id="returnHomeButton" onclick="goPage()">返回前門</button>
 
-        <script src="./JS/index.js"></script>
-
+        <script>
+            var qrcode = new QRCode("qrcode", {
+                text: "GITI",
+                width: 256,
+                height: 256,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
         </script>
         
     </body>
